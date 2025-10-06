@@ -1,11 +1,84 @@
 <!doctype html>
 <html lang="hu">
 <head>
-  <meta charset="utf-8">
-  <title>FitCoach</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Életet az Éveknek – Legyél a legjobb 40+‑os önmagad</title>
+  <meta name="description" content="Online coaching 40 felett: hormonbarát étrend, ízületkímélő edzések, laborok elemzése, szükség esetén TRT konzultáció. Maxoljuk ki a B oldalt!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10;--panel:#11151a;--muted:#9aa4ad;--text:#ecf1f6;--brand:#8b5cf6;--brand-2:#22d3ee;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 90% -10%, rgba(34,211,238,.15), transparent 40%),
+                  radial-gradient(1000px 700px at -10% 10%, rgba(139,92,246,.18), transparent 40%),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1000px; margin:0 auto; padding:24px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px; padding:32px 28px; backdrop-filter: blur(6px);
+      box-shadow:0 10px 30px rgba(0,0,0,.3);
+    }
+    h1{font-size: clamp(28px, 4.6vw, 48px); line-height:1.1; margin:6px 0 14px; letter-spacing:-.02em}
+    p.lead{font-size: clamp(16px, 2.5vw, 20px); color:var(--muted); margin:0 0 18px}
+    ul{margin:18px 0 10px; padding-left:22px}
+    li{margin:8px 0}
+    .badge{display:inline-flex; gap:8px; align-items:center; font-weight:600; color:#0b0d10;
+      background:linear-gradient(90deg, var(--brand), var(--brand-2));
+      padding:8px 12px; border-radius:999px; text-transform:uppercase; font-size:12px; letter-spacing:.08em}
+    .cta{
+      display:inline-block; margin-top:22px; padding:14px 20px; border-radius:14px; font-weight:700; text-decoration:none;
+      background:linear-gradient(90deg, var(--brand), var(--brand-2)); color:#0b0d10;
+      box-shadow:0 8px 24px rgba(34,211,238,.25), inset 0 0 0 1px rgba(0,0,0,.1);
+      transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+    }
+    .cta:hover{transform: translateY(-1px); filter:brightness(1.05); box-shadow:0 12px 28px rgba(34,211,238,.3)}
+    .cta:active{transform: translateY(0)}
+    .foot{color:var(--muted); font-size:13px; margin-top:28px}
+    .center{display:flex; align-items:center; justify-content:center}
+    header{padding:22px 0 6px}
+  </style>
 </head>
 <body>
-  <h1>Hello világ!</h1>
-  <p>Ez lesz a személyi edző oldalad kezdő verziója.</p>
+  <div class="wrap">
+    <header class="center">
+      <span class="badge">Életet az Éveknek</span>
+    </header>
+
+    <main class="card">
+      <h1>Legyél a legjobb 40+‑os önmagad</h1>
+      <p class="lead">40 felett a cél már nem csupán a külső, hanem az életminőség, a hormonális egyensúly, és a vitalitás újraszerzése. A “B” oldal tele van lehetőségekkel, ha tudod hogyan nyúlj a testedhez tudatosan.</p>
+
+      <p>Az online coaching programomban nem csak edzéstervet kapsz, hanem egy teljes személyre szabott rendszert:</p>
+      <ul>
+        <li>hormon barát étrend és gyógynövényes támogatás</li>
+        <li>célzott ízületkímélő edzések</li>
+        <li>laborértékek elemzése, magyarázata, és optimalizálása</li>
+        <li>ha szükséges TRT terápia megbeszélése, optimalizálása szakmai alapokon</li>
+      </ul>
+
+      <p>Mert ez a program azoknak szól, akik nem a húszéves önmagukat keresik, hanem a legjobb 40+‑os verziójukat építik újra tudatosan, egészségesen, stabilan!</p>
+
+      <p>Gyere, maxoljuk ki a “B” oldalt, hogy jobb legyen, mint az “A”.</p>
+
+      <!--
+        ✨ IDE ILLeszd BE A SAJÁT STRIPE FIZETÉSI LINKED ✨
+        Cseréld az href értékét a saját Stripe Checkout/Fizetési oldalas URL-edre
+        (pl. https://buy.stripe.com/xxxxxxxx )
+      -->
+      <a class="cta" href="https://buy.stripe.com/IDE-JON-A-SAJÁT-LINKED" target="_blank" rel="noopener">Csatlakozom – előfizetés</a>
+
+      <div class="foot">Biztonságos fizetés Stripe-on keresztül. Bármikor lemondható.</div>
+    </main>
+  </div>
 </body>
 </html>
