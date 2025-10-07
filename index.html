@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Életet az Éveknek – Legyél a legjobb 40+‑os önmagad</title>
-  <meta name="description" content="Online coaching 40 felett: hormonbarát étrend, ízületkímélő edzések, laborok elemzése, szükség esetén TRT konzultáció. Maxoljuk ki a B oldalt!" />
+  <meta name="description" content="Online coaching 40 felett: hormonbarát étrend, ízületkímélő edzések, laborok elemzése, szükség esetén TRT konzultáció. Előfizetéssel havonta 2×30 perc konzultáció!" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
       --text:#111827;
       --brand:#8b5cf6;
       --brand-2:#22d3ee;
+      --success:#10b981;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -23,6 +24,7 @@
       margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       background:var(--bg);
       color:var(--text);
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
     .wrap{max-width:900px; margin:0 auto; padding:24px}
     .card{
@@ -38,28 +40,47 @@
     .badge{display:inline-flex; gap:8px; align-items:center; font-weight:600; color:#0b0d10;
       background:linear-gradient(90deg, var(--brand), var(--brand-2));
       padding:8px 12px; border-radius:999px; text-transform:uppercase; font-size:12px; letter-spacing:.08em}
+
+    /* Kiemelt előny szalag */
+    .highlight{position:relative; margin:18px 0 22px; padding:14px 16px; border-radius:14px; font-weight:600;
+      background: #f0f9ff; border:1px solid #bae6fd; color:#0c4a6e}
+    .highlight strong{font-weight:800}
+    .highlight .tag{display:inline-flex; align-items:center; gap:8px; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#065f46;
+      background:#ecfdf5; border:1px solid #a7f3d0; border-radius:999px; padding:4px 10px; margin-left:8px}
+
+    /* CTA blokk */
+    .cta-wrap{display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:18px}
     .cta{
-      display:inline-block; margin-top:22px; padding:14px 20px; border-radius:14px; font-weight:700; text-decoration:none;
+      display:inline-block; padding:14px 20px; border-radius:14px; font-weight:700; text-decoration:none;
       background:linear-gradient(90deg, var(--brand), var(--brand-2)); color:#ffffff;
       box-shadow:0 8px 24px rgba(139,92,246,.25);
       transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
     }
     .cta:hover{transform: translateY(-1px); filter:brightness(1.05); box-shadow:0 12px 28px rgba(139,92,246,.3)}
     .cta:active{transform: translateY(0)}
+    .cta-note{font-size:13px; color:var(--muted)}
+
     .foot{color:var(--muted); font-size:13px; margin-top:28px}
     .center{display:flex; align-items:center; justify-content:center}
     header{padding:22px 0 6px}
+    /* finom elválasztó */
+    .hr{height:1px; background:#e5e7eb; margin:22px 0}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="center">
-      <span class="badge">Életet az Éveknek</span>
+      <span class="badge" aria-label="márka">Életet az Éveknek</span>
     </header>
 
-    <main class="card">
+    <main class="card" role="main">
       <h1>Legyél a legjobb 40+‑os önmagad</h1>
       <p class="lead">40 felett a cél már nem csupán a külső, hanem az életminőség, a hormonális egyensúly, és a vitalitás újraszerzése. A “B” oldal tele van lehetőségekkel, ha tudod hogyan nyúlj a testedhez tudatosan.</p>
+
+      <div class="highlight" role="note" aria-live="polite">
+        🎯 <strong>Előfizetőként minden hónapban 2×30 perc</strong> személyes vagy online <strong>egyéni konzultáció</strong> jár — beépítve az előfizetés árába!
+        <span class="tag">erős extra</span>
+      </div>
 
       <p>Az online coaching programomban nem csak edzéstervet kapsz, hanem egy teljes személyre szabott rendszert:</p>
       <ul>
@@ -69,14 +90,22 @@
         <li>ha szükséges TRT terápia megbeszélése, optimalizálása szakmai alapokon</li>
       </ul>
 
-      <p>Mert ez a program azoknak szól, akik nem a húszéves önmagukat keresik, hanem a legjobb 40+‑os verziójukat építik újra tudatosan, egészségesen, stabilan!</p>
+      <div class="hr" aria-hidden="true"></div>
 
+      <p>Mert ez a program azoknak szól, akik nem a húszéves önmagukat keresik, hanem a legjobb 40+‑os verziójukat építik újra tudatosan, egészségesen, stabilan!</p>
       <p>Gyere, maxoljuk ki a “B” oldalt, hogy jobb legyen, mint az “A”.</p>
 
-      <a class="cta" href="https://buy.stripe.com/7sY6oH2y19lRb8k832asg00" target="_blank" rel="noopener">Csatlakozom – előfizetés</a>
+      <div class="cta-wrap">
+        <a class="cta" href="https://buy.stripe.com/7sY6oH2y19lRb8k832asg00" target="_blank" rel="noopener">Csatlakozom – előfizetés</a>
+        <span class="cta-note">Biztonságos fizetés Stripe-on keresztül • Bármikor lemondható • 2×30p/hó konzultáció</span>
+      </div>
 
-      <div class="foot">Biztonságos fizetés Stripe-on keresztül. Bármikor lemondható.</div>
+      <div class="foot">© <span id="y"></span> Életet az Éveknek</div>
     </main>
   </div>
+  <script>
+    // év automatikus frissítése a láblécben
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
