@@ -16,7 +16,6 @@
       --text:#111827;
       --brand:#8b5cf6;
       --brand-2:#22d3ee;
-      --success:#10b981;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -44,9 +43,6 @@
     /* Kiemelt előny szalag */
     .highlight{position:relative; margin:18px 0 22px; padding:14px 16px; border-radius:14px; font-weight:600;
       background: #f0f9ff; border:1px solid #bae6fd; color:#0c4a6e}
-    .highlight strong{font-weight:800}
-    .highlight .tag{display:inline-flex; align-items:center; gap:8px; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#065f46;
-      background:#ecfdf5; border:1px solid #a7f3d0; border-radius:999px; padding:4px 10px; margin-left:8px}
 
     /* CTA blokk */
     .cta-wrap{display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:18px}
@@ -63,7 +59,6 @@
     .foot{color:var(--muted); font-size:13px; margin-top:28px}
     .center{display:flex; align-items:center; justify-content:center}
     header{padding:22px 0 6px}
-    /* finom elválasztó */
     .hr{height:1px; background:#e5e7eb; margin:22px 0}
   </style>
 </head>
@@ -78,8 +73,7 @@
       <p class="lead">40 felett a cél már nem csupán a külső, hanem az életminőség, a hormonális egyensúly, és a vitalitás újraszerzése. A “B” oldal tele van lehetőségekkel, ha tudod hogyan nyúlj a testedhez tudatosan.</p>
 
       <div class="highlight" role="note" aria-live="polite">
-        🎯 <strong>Előfizetőként minden hónapban 2×30 perc</strong> személyes vagy online <strong>egyéni konzultáció</strong> jár — beépítve az előfizetés árába!
-        <span class="tag">erős extra</span>
+        🎯 Előfizetőként minden hónapban 2×30 perc személyes vagy online egyéni konzultáció jár
       </div>
 
       <p>Az online coaching programomban nem csak edzéstervet kapsz, hanem egy teljes személyre szabott rendszert:</p>
@@ -97,14 +91,13 @@
 
       <div class="cta-wrap">
         <a class="cta" href="https://buy.stripe.com/7sY6oH2y19lRb8k832asg00" target="_blank" rel="noopener">Csatlakozom – előfizetés</a>
-        <span class="cta-note">Biztonságos fizetés Stripe-on keresztül • Bármikor lemondható • 2×30p/hó konzultáció</span>
+        <span class="cta-note">Biztonságos fizetés Stripe-on keresztül • Bármikor lemondható</span>
       </div>
 
       <div class="foot">© <span id="y"></span> Életet az Éveknek</div>
     </main>
   </div>
   <script>
-    // év automatikus frissítése a láblécben
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
